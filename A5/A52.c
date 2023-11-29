@@ -9,7 +9,7 @@
 
 int main(){
     int len=40; //definition, wie viele Zeichen eingelesen werden sollen
-    char zeichenkette[len+1];   //Erstellung des Arrays (Die Länge ist zwar mit einer Variable angegeben, der Compiler ersetzt diese, da konstant (inclusive der Addition), durch einen konstanten Wert, weshal es hier erlaubt ist eine Variable zur initialisierung zu nutzen)
+    char zeichenkette[41];   //Erstellung des Arrays (Die Länge ist zwar mit einer Variable angegeben, der Compiler ersetzt diese, da konstant (inclusive der Addition), durch einen konstanten Wert, weshal es hier erlaubt ist eine Variable zur initialisierung zu nutzen)
     zeichenkette[len]='\0'; //Ob es notwendig ist, sei mal dahingestellt, aber es sorgt für die Nullterminierung
     for (int i=0; i<len; i++){
         zeichenkette[i]=getchar();  //jeder Character wird einzeln eingelesen und abgespeichert
