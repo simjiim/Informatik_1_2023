@@ -3,6 +3,8 @@
 //
 #define MAX_VALUES 100 // max. Anzahl der Messwerte
 #include <stdio.h>
+#include <math.h>
+
 double measurement[MAX_VALUES]; // globale Feldvariable
 
 int read_values(void); // Rückgabewert: Anzahl der Messwerte
@@ -55,6 +57,10 @@ double max(int N){
         }
     }
     return max;
+}
+
+int standard_deviation(int N){
+
 }
 
 void printMenue(){
