@@ -13,6 +13,7 @@ int main(){
     int potenz;
     int remainder;
     int fuerendeNull;
+    int i;
 
     while (1){  //Endlosschleife
         potenz = 128;   //Startwert für die Division
@@ -29,7 +30,7 @@ int main(){
         } else{
             remainder=input;    //Rest wird auf den input gesetzt -> nicht notwendiger Schritt (zur besseren Lesbarkeit der Variablen/speicherung des Eingabewertes)
 
-            for (int i = 7; i >= 0; i--) {  //Da wir nur bis zur 7. Potenz von 2 betrachten, gibt es 7 Schleifendurchläufe
+            for (i = 7; i >= 0; i--) {  //Da wir nur bis zur 7. Potenz von 2 betrachten, gibt es 7 Schleifendurchläufe
                 umgerechnet=remainder/(potenz); //Das Ergebnis der entsprechenden 2er-Potenz
                 remainder=remainder % (potenz); //Der Rest, mit dem wir die restlichen berechnen
                 potenz/=2;  //Verminderung der Potenz für den nächsten Schleifendurchlauf

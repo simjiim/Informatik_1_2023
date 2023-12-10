@@ -30,7 +30,7 @@ int count_loops(double Re, double Im)
 int main()
 {
     double Re_0=0, Im_0=0, zoom=0, Re, Im, B;
-    int N;
+    int N, y, x;
     ClearGraphic();
 
 
@@ -41,9 +41,9 @@ int main()
     printf("Vergroesserung:");
     scanf("%lf", &zoom);
 
-    for (int y = 0; y < 500; y++)
+    for (y = 0; y < 500; y++)
     {
-        for (int x = 0; x < 700; x++)
+        for (x = 0; x < 700; x++)
         {
             Re = Re_0 + (x - 350) / (zoom * 200);
             Im = Im_0 - (y - 250) / (zoom * 200);
