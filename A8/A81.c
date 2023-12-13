@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int ggt(z1, z2) {
+int ggt(int z1, int z2) {
 	if (z2 == 0)
 		return z1;
 	else
