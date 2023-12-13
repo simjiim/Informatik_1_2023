@@ -9,11 +9,6 @@ int main(){
     double kontostand=0, zinssatz=0;
     int jahre=0, i=0;
 
-    printf("Size int: %i\n", sizeof(int));
-    printf("Size long: %i\n", sizeof(long));
-    printf("Size long long: %i\n", sizeof(long long));
-
-
     printf("Geben Sie den Kontostand ein!\n");
     scanf("%lf", &kontostand);
     printf("Geben Sie den Zinssatz p.a. an! (in %%)\n");
